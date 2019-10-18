@@ -1,0 +1,21 @@
+{
+    "name": "Micro",
+    "description": "Flavio framework",
+    "license": "MIT",
+    "type": "Project",
+    "authors": [
+        {
+            "name": "Flavio Amorim",
+            "email": "flavio.amorim9@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "require": {
+        "php": ">=5.4"
+    }
+}
