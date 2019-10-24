@@ -69,7 +69,7 @@ class Route
 
         if($found) {
             $controller = Container::newController($controller);
-            switch (count($param)){
+            switch (@count($param)){
                 case 1:
                     $controller->$action($param[0], $this->getRequest());
                     break;

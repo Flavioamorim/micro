@@ -2,11 +2,13 @@
 
 namespace App\Controllers;
 
-class HomeController
+use Core\BaseController;
+
+class HomeController extends BaseController
 {
     public function index()
     {
-        echo "index website";
-
+        $this->view->titulo = "Lista de programetes";
+        $this->henderView('home/index', 'layout');
     }
 }
