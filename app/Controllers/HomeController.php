@@ -10,7 +10,8 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        $this->view->titulo = "Lista de programetes";
+        $this->setPageTitle(" Homee ");
+            $this->view->titulo = "Lista de programetes";
         // $id = 12;
         // try {
             

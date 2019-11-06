@@ -13,9 +13,9 @@ class PostsController extends BaseController
 
     public function show($id, $request)
     {
-        echo "posts website show $id" ;
+        echo "posts website show {$id}" ;
         echo $request->get->nome;
         print_r($request->get);
-
+        
     }
 }

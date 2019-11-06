@@ -9,6 +9,7 @@ abstract class BaseController
     protected $view;
     private $viewPath;
     private $layoutPath;
+    private $pageTitle = null;
 
     public function __construct()
     {
@@ -49,6 +50,20 @@ abstract class BaseController
             require_once __DIR__ . "/../app/Views/{$this->layoutPath}.phtml";
         } else {
             echo "Error: View layout path not found!";
+        }
+    }
+
+    protected function setPageTitle($title)
+    {
+        $this->pageTitle = $title;
+    }
+
+    protected function getPageTitle($separator = null)
+    {
+        if($separator) {
+            echo $this->pageTitle . " " . $separator . " ";
+        } else {
+            echo $this->pageTitle;
         }
     }
 }

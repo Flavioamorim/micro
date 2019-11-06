@@ -9,10 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
-    <title>Flavio Framework</title>
+    <title><?php $this->getPageTitle('|') ?>Flavio Framework</title>
 </head>
 
 <body>
+    <?php require_once __DIR__ . ("/menu.phtml") ?>
     <?php $this->content() ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
